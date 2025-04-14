@@ -39,7 +39,7 @@ def selection_sort(number_array, direction="ascending"):
             if direction == "ascending":
                 if number_array[num_idx] < number_array[min_max_idx]:
                     min_max_idx = num_idx
-            elif direction == "descendent":
+            elif direction == "descending":
                 if number_array[num_idx] > number_array[min_max_idx]:
                     min_max_idx = num_idx
         number_array[i], number_array[min_max_idx] = number_array[min_max_idx], number_array[i]
@@ -52,7 +52,7 @@ def selection_sort(number_array, direction="ascending"):
 def main():
     data = read_data("numbers.csv")
     print(data)
-    print(selection_sort(data["series:_1"]))
+    print(selection_sort(data["series_1"]))
 
 
 if __name__ == '__main__':
